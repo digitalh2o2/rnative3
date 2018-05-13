@@ -18,7 +18,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <Provider store={createStore(reducers)}>
-        <View>
+        <View style={{ flex: 1 }}>
           <Header headerText="The Tech Stack" />
           <LibraryList />
         </View>
