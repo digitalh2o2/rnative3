@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import reducers from "./reducers";
 import { Header } from "./components/common";
+import LibraryList from "./components/LibraryList";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -19,6 +20,7 @@ export default class App extends Component<Props> {
       <Provider store={createStore(reducers)}>
         <View>
           <Header headerText="The Tech Stack" />
+          <LibraryList />
         </View>
       </Provider>
     );
